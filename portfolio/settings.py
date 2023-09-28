@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", "FALSE").lower() == "true"
 
-ALLOWED_HOSTS = ['shehababdelaal.onrender.com', 'www.shehababdelaal.onrender.com']
+ALLOWED_HOSTS = ['shehababdelaal.onrender.com', 'www.shehababdelaal.onrender.com','shehababdelaal.com', 'www.shehababdelaal.com']
 
 
 # Application definition
