@@ -1,0 +1,21 @@
+
+{% extends 'articles/base.html' %}
+{% block header %}
+    <div class='jumbotron'>
+        <h1>Hi, i am Shehab, welcome to my personal website.</h1>
+    </div>
+{% endblock header %}
+
+{% block content %}
+
+<h2>
+    <a href="{% url 'users:register' %}">Register an account</a> to keep
+    up with the new articles every week, and add your own thoughts and ideas.
+    </h2>
+    <h2>
+        Hey there! I'm Shehab, a mechanical engineering graduate with a passion for languages and entrepreneurship.
+        I'm on a journey to learn languages like English, Spanish, German, and more. Join me as I share my experiences and insights.
+        Explore my engineering projects and stay tuned for my upcoming startup ventures!
+    </h2>
+{% endblock content %}
+

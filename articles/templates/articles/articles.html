@@ -1,0 +1,26 @@
+{% extends "articles/base.html" %}
+
+{% block header %}
+    <h1 class="text-center">Articles</h1>
+{% endblock header %}
+
+{% block content %}
+    <div class="list-group">
+        {% for article in articles %}
+            <div class="list-group-item">
+                <h3 class="list-group-item-heading">
+                    <a href="{% url 'articles:detail' article.id %}">{{ article.title }}</a>
+                </h3>
+                <p class="list-group-item-text">
+                    Added on: {{ article.date_added|date:'M d, Y H:i' }}
+                </p>
+            </div>
+            <!-- Add some spacing between articles -->
+            <div style="margin-bottom: 20px;"></div>
+        {% empty %}
+            <p class="text-center">No articles have been added yet.</p>
+        {% endfor %}
+    </div>
+    <!-- You can remove the "Add new article" link if it's not applicable -->
+    <!-- <p><a href="" class="btn btn-primary">Add new article</a></p> -->
+{% endblock content %}

@@ -1,0 +1,18 @@
+{% extends 'articles/base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="article-detail">
+                    <h1 class="text-center">{{ article.title }}</h1>
+                    <p class="text-muted text-center">{{ article.date }}</p>
+                    <hr>
+                    <div class="article-body">
+                        <p style="font-size: 18px; line-height: 1.6;">{{ article.body|linebreaks }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
