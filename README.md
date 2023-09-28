@@ -4,7 +4,7 @@ Specs of my portfolio website:
 I will create a web app called Shehab Abdelaal.
 Which wll contain a homepage, about page, contact page & articles page.
 
-In the articles page i will be adding weekly articles with the possibilty=y for users to comment on the articles.
+In the articles page i will be adding weekly articles with the possibilty for users to comment on the articles.
 
 I might add another page to allow users to write journals about themselves & their achievments.
 
